@@ -3,7 +3,7 @@ layout: cv
 title: Mosiah Valdez-Bates Résumé
 ---
 # Mosiah Valdez-Bates
-software engineer, Web developer .
+software engineer, Web developer
 
 <div id="webaddress">
 <a href="mosiahvaldezbates@gmail.com">mosiahvaldezbates@gmail.com</a>
