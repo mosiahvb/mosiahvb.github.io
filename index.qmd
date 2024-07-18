@@ -4,7 +4,101 @@ subtitle: "my data science portfolio"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Project 0
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+
+---
+# Question 1
+*Finish the readings, setup, and be prepared with any questions to get your environment working smoothly (class for on-campus and Slack for online)
+
+I Finish the reading, and my Slack is also properly set up.
+
+# Question 2
+*In VS Code, create the example chart from section 3.2.2 of the textbook. (Note: you will be using Plotly Express to display the chart instead of Altair which is used in the book)
+
+I successfully completed the chart.
+```{python}
+import pandas as pd
+import plotly.express as px
+
+df = pd.read_csv('/Users/mosiahvaldez-bates/Documents/GitHub/mosiahvb_fall23/250_Projects/mpg.csv')
+```
+
+```{python}
+
+fig = px.scatter(df, x="displ", y="hwy")
+fig.show()
+
+```
+
+# Question 3
+*Your final report should also include the table created from the following (assuming you have mpg from question 2)
+
+I have successfully added the graph using the file from mpg,from question 2.
+
+```{python}
+(df
+  .head(5)
+  .filter(["manufacturer", "model","year", "hwy"])
+)
+```
+
+# Question 4
+*Your portfolio should include your updated resume in markdown language as part of the Git and Github Setup using the resume.qmd file in the portfolio
+
+I have accomplished this task my résumé is presented in markdown language below.
+
+---
+layout: cv
+title: My Résumé
+---
+
+# Mosiah Valdez-Bates
+989-721-6299 | mosiahvaldezbates@gmail.com | Boise, ID  
+[LinkedIn Profile](http://www.linkedin.com/in/mosiahvaldez-84588a1a5)
+
+## Introductory Summary
+Enthusiastic learner dedicated to understanding team dynamics and individual needs. Always ensuring effective collaboration to achieve targets, milestones, and exceed expectations. Highly experienced in fostering positive interpersonal relationships and consistently delivering positive outcomes for all stakeholders. Proactively learns from challenges to contribute to the development of high-functioning software projects.
+
+## Education
+**Brigham Young University-Idaho**  
+Bachelor of Science in Software Engineering, December 2024  
+Rexburg, ID  
+
+Relevant Classes:
+- Programming Building Blocks
+- Programming with Functions
+- Programming with Classes
+- Programming with Data Structures
+- Applied Programming
+- Software Testing
+- JavaScript Language
+- Web Fundamentals
+- IT Management and Dev-Ops
+- Networking
+
+## Skills
+Worked with:
+- Python
+- HTML, CSS, JavaScript
+- Strong analytical skills and attention to detail
+
+## Work Experience
+
+### Pro Moto Billet
+*AP Clerk*, September 2022 – Present  
+Nampa, ID  
+- Managed end-to-end invoicing and purchasing processes with vendors, ensuring accuracy and timeliness. Coordinated and executed office projects utilizing Excel sheets for data analysis and reporting.
+- Operated and maintained CNC machines, overseeing entire machining process ensuring precision and quality in production of physical products demonstrating a keen eye for detail and adherence to quality standards.
+
+### Rove Pest Control
+*Technician*, April 2020 – August 2022  
+Boston, MA  
+- Orchestrated a significant boost in online reputation by cultivating over 200 5-star reviews, elevating four underperforming locations from low-ranking reviews to succeeding 4.7 stars or higher.
+- Led a team of eight in developing effective customer interaction and communication strategies, fostering positive service experiences, and generating customer referrals for new business opportunities.
+
+### Rove Pest Control - Internship
+*Team Lead of Sales*, April 2021 – August 2021  
+Boston, MA  
+- Spearheaded a dynamic team of first-year door-to-door sales representatives during a summer internship. Achieved and exceeded given targets, generating over half a million dollars in revenue through cold calling in a span of 4 months.
+- Demonstrated strong leadership skills by developing Rove's most profitable sales team, by focusing on understanding all 10 team members needs and wants to maintain morale and prepare effective training programs.
